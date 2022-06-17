@@ -14,7 +14,7 @@
 - `npm start`
 
 # API utilizada : 
-- [PokeAPI](https://pokeapi.co/).
+- [PokeAPI](https://pokeapi.co/)
 
 # Observações :
 A principal proposta desse projeto é trabalhar com React Hooks, colocando em prática o que foi passado no conteúdo de ReactJs, como a criação de componentes e trabalhar com Context API. Por isso, não me dei ao trabalho de dedicar muito tempo no css, então o layout da pokédex eu peguei já pronta através desse [link](https://codepen.io/Bidji/pen/MYdPwo).
