@@ -4,9 +4,10 @@ import PokemonContext from '../Context/PokedexContext'
 
 function Pokedex () {
     const { Provider } = useContext(PokemonContext)
-    const { filtername, namepokemon } = Provider;
-    const haddleButtomSearch = () => {
-        console.log(namepokemon);
+    const { filtername, namepokemon, buttonNamePokemon, pokemonimage, 
+         pokemonname, pokemonHeight, pokemonWeight, pokemontypes } = Provider;
+    const haddleButtomSearch = async () => {
+        await buttonNamePokemon(namepokemon);
     }
     const haddleButtomClean = () => {
         filtername('');
@@ -36,8 +37,9 @@ function Pokedex () {
               <div id="buttontopPicture1"></div>
               <div id="buttontopPicture2"></div>
             </div>
+
             <div id="picture">
-              <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/200653/psykokwak.gif" alt="psykokwak" height="170" />
+              <img src={pokemonimage} alt={'pokemon'} height="170" />
             </div>
             <div id="buttonbottomPicture"></div>
             <div id="speakers">
@@ -71,12 +73,10 @@ function Pokedex () {
         </div>
         <div id="right">
           <div id="stats">
-            <strong>Name:</strong> Psyduck<br/>
-            <strong>Type:</strong> Water<br/>
-            <strong>Height:</strong> 2'072''<br/>
-            <strong>Weight:</strong> 43.2 lbs.<br/><br/>
-            <strong>The duck Pokemon</strong><br/>
-            Uses mysterious powers to perform various attacks.
+            <strong>Name:</strong>{pokemonname }<br/>
+            <strong>Types:</strong> {pokemontypes.map((e, index)=> <li key={ index }>{e.type.name}</li>)}''<br/>
+            <strong>Height:</strong> {pokemonHeight}''<br/>
+            <strong>Weight:</strong> {pokemonWeight} lbs.<br/><br/>
           </div>
           <div id="blueButtons2">
           <input
