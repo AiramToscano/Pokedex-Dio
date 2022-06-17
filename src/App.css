@@ -2,14 +2,24 @@
 	margin: 0;
 	padding: 0;
 }
-
+body {
+	background-size: 300% 300%;
+	background-image: linear-gradient(
+		  -45deg, 
+		  rgba(59,173,227,1) 0%, 
+		  rgba(87,111,230,1) 25%, 
+		  rgba(152,68,183,1) 51%, 
+		  rgba(255,53,127,1) 100%
+	);  
+	animation: AnimateBG 20s ease infinite;
+}
 /* codigo do css: https://codepen.io/Bidji/pen/MYdPwo */
 @media all {
 
 	div#pokedex
 	{
 		width: 750px;
-		margin: 90px auto 0 auto;
+		margin: 50px auto 0 auto;
 	}
 
 	div#left
@@ -676,7 +686,7 @@
 	{
 		width: 350px;
 		height: 80px;
-		background-color: #fff;
+		background-color: #7b0000;
 
 		border-top-right-radius: 30px;
 		-webkit-border-top-right-radius: 30px;
@@ -688,7 +698,7 @@
 	{
 		width: 216px;
 		height: 100px;
-		background-color: #fff;
+		background-color: #7b0000;
 		float: left;
 
 		position: absolute;
@@ -1038,4 +1048,9 @@
  width: 240px;
  height: 25px;
  margin-top: -10px;
+}
+
+#airam {
+	margin-left: 295px;
+	margin: 20px;
 }

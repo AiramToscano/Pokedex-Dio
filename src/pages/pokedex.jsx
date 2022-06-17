@@ -14,6 +14,7 @@ function Pokedex () {
     }
     return (
         <div id="pokedex">
+          <h1 id="airam">Pokedex Airam</h1>
         <div id="left">
           <div id="logo"></div>
           <div id="bg_curve1_left"></div>
