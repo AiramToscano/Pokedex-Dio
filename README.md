@@ -19,9 +19,9 @@
 # Observações :
 A principal proposta desse projeto é trabalhar com React Hooks, colocando em prática o que foi passado no conteúdo de ReactJs, como a criação de componentes e trabalhar com Context API. Por isso, não me dei ao trabalho de dedicar muito tempo no css, então o layout da pokédex eu peguei já pronta através desse [link](https://codepen.io/Bidji/pen/MYdPwo).
 
-## Preview do projeto
+## Preview do projeto :
 ![recipes](https://github.com/AiramToscano/Pokedex-Dio/blob/airamtoscano/src/images/bloggif_62ac96145d564.gif)
 
-## Deploy do projeto
+## Deploy do projeto :
 
 [Site information](https://pokedexairam.netlify.app/)
