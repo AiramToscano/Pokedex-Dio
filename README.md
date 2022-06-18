@@ -21,3 +21,7 @@ A principal proposta desse projeto é trabalhar com React Hooks, colocando em pr
 
 ## Preview do projeto
 ![recipes](https://github.com/AiramToscano/Pokedex-Dio/blob/airamtoscano/src/images/bloggif_62ac96145d564.gif)
+
+## Deploy do projeto
+
+[Site information](https://pokedexairam.netlify.app/)
